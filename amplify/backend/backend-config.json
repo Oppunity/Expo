@@ -1,0 +1,26 @@
+{
+	"auth": {
+		"oppunityd6d8c3dc": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"oppunity": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authoppunityd6d8c3dc"
+						}
+					}
+				}
+			}
+		}
+	}
+}
