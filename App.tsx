@@ -26,7 +26,7 @@ class App extends Component {
       return (
           <AppContainer theme="dark" />
       )
-  }
+  };
 }
 
 export default App; 
