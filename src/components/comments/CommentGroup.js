@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text } from 'react-native';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import CommentAdd from './CommendAdd';
+import CommentAdd from './CommentAdd';
 import Comment from './Comment'
 
 import { timingSafeEqual } from 'crypto';
