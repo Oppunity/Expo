@@ -3,7 +3,7 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Navigator } from 'react-native'; 
 
-import CommentGroup from './src/components/comments/CommentGroup'
+
 import EventClickPage from './src/screens/EventClickPage';
 import HomeScreenPage from './src/screens/HomeScreenPage';
 import InterestPage from './src/screens/InterestPage';
@@ -25,7 +25,7 @@ import RegisterStudentPage from './src/screens/RegisterStudentPage';
 const RootStack = createStackNavigator (
   
   { 
-  CommentGroup: CommentGroup,
+  
   HomeScreen: HomeScreenPage,
   EventClick: EventClickPage,
   Login: LoginPage,

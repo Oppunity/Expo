@@ -104,7 +104,7 @@ class Post extends Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity>
-                        <Text style = {styles.organizationHandle}>@NSBE  </Text>
+                        <Text style = {styles.organizationHandle}>@nsbe  </Text>
                         </TouchableOpacity>
 
                         <Text style = {styles.activity}> · 45 minutes ago </Text>
@@ -173,7 +173,7 @@ class Post extends Component {
 
                     
                     
-                    <TouchableOpacity onPress={() => this.props.navigation.navigate('CommentGroup') }>
+                    <TouchableOpacity>
                    
                     <Icon style = {styles.commentIcon} name = "comment-o" size={20} />
 
@@ -281,6 +281,15 @@ const styles = StyleSheet.create({
         
     },
 
+
+    organizationHandle: {
+       
+        color: 'dodgerblue',
+        fontSize: 16,
+        
+               
+    },
+
     
     organizationName: {
         marginLeft: 10,
@@ -290,13 +299,7 @@ const styles = StyleSheet.create({
         
     },
 
-    organizationHandle: {
-       
-        color: 'gray',
-        fontSize: 16,
-               
-    },
-
+    
     organizationPic: {
         height: 70,
         width: 70,
@@ -341,8 +344,7 @@ const styles = StyleSheet.create({
         height: 90,
         backgroundColor: 'black',
         flexDirection: "row",
-      
-        justifyContent: "center",
+              justifyContent: "center",
         borderColor: "gray",
        
         
